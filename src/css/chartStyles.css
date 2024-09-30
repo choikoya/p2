@@ -1,0 +1,72 @@
+/* 그래프 전체 컨테이너 */
+.graph-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 더 깊은 그림자 */
+    transition: box-shadow 0.3s ease;
+}
+
+.graph-container:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* 호버 시 깊은 그림자 */
+}
+
+/* 버튼 컨테이너 */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+/* 차트 버튼 스타일 */
+.chart-button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 12px 25px;
+    margin: 0 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chart-button:hover {
+    background-color: #e2e2e2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* 호버 시 더 깊은 그림자 */
+}
+
+.chart-button.active {
+    background-color: #2c8bff; /* 활성화된 버튼의 푸른색 배경 */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 더 강한 그림자 */
+}
+
+/* 각 그래프 항목 스타일 */
+.graph-item {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05); /* 부드러운 그림자 */
+}
+
+/* 인풋 필드 스타일 */
+.input-box {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 0 15px;
+    font-size: 16px;
+    outline: none;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-box:focus {
+    border-color: #2c8bff; /* 포커스 시 푸른색 테두리 */
+    box-shadow: 0 2px 8px rgba(44, 139, 255, 0.2); /* 포커스 시 그림자 추가 */
+}
